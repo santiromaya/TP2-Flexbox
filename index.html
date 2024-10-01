@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hockey Femenino Argentina</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="assets/icon.svg" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <h1 class="animacion-entrada">Hockey Femenino Argentina</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="equipo">
+                <h2>Las Leonas</h2>
+                <p>
+                    Conoce al equipo de hockey femenino argentino, uno de los
+                    más destacados del mundo.
+                </p>
+
+                <ol>
+                    <li>Belén Succi (Arquera)</li>
+                    <li>Aymar Luciana (Mediocampista)</li>
+                    <li>Agustina Albertario (Delantera)</li>
+                </ol>
+            </section>
+
+            <section id="noticias">
+                <h2>Noticias Recientes</h2>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.espn.com.ar/hockey-sobre-cesped/nota/_/id/14017140/hockey-juegos-olimpicos-de-paris-2024-las-leonas-medalla-de-bronce"
+                            target="_blank"
+                            rel="noopener"
+                            >El recorrido de Las Leonas en París</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://cdn.radionacional.com.ar/rocio-sanchez-moccia-el-legado-de-las-leonas-es-de-entregarse-100-por-ciento/"
+                            >ENTREVISTA A LA CAPITANA DE LAS LEONAS</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            rel="noopener"
+                            href="https://www.cahockey.org.ar/noticia/se-juegan-las-semifinales-del-super-8/3699"
+                            >SE JUEGAN LAS SEMIFINALES DEL SÚPER 8</a
+                        >
+                    </li>
+                </ul>
+            </section>
+
+            <section id="localizacion">
+                <h2>Entrenamientos y Competencias</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d441.2267353732152!2d-64.26827361138201!3d-27.784726312843723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1727654097344!5m2!1ses-419!2sar"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </section>
+
+            <section id="multimedia">
+                <h2>Galería Multimedia</h2>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/GvVmDFVqBbE?si=UX_cuP5Ul-l0kJM5"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/x5upwxHcuqo?si=sSnHg5WWCEgXCkFM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+
+                <br />
+
+                <audio controls autoplay>
+                    <source src="assets/muchachas.mp3" type="audio/mpeg" />
+                    Tu navegador no soporta la etiqueta de audio.
+                </audio>
+            </section>
+
+            <section>
+                <h2>Calendario de Partidos</h2>
+                <!-- Tabla con el calendario de partidos -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Partido</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Argentina vs Países Bajos</td>
+                            <td>10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Argentina vs Alemania</td>
+                            <td>4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Argentina vs Australia</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="contacto">
+                <form
+                    action="enviar.php"
+                    method="post"
+                    class="animacion-entrada-formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required /><br />
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required /><br />
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea
+                    ><br />
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                &copy; 2024 Hockey Femenino Argentina. Todos los derechos
+                reservados.
+            </p>
+        </footer>
+    </body>
+</html>
